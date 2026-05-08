@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TAREA VIAJE A ROLDANILLO"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-23 11:50:07 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMjM7MTA6NDQ6MzUgcC5tLjsyNjg2"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMjM7MTE6NTA6MDcgcC5tLjsyOzI3OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <home/>
+            <declare name="CANTIDADALUMNOS, VALORPORCANTIDAD" type="Integer" array="False" size=""/>
+            <input variable="CANTIDADALUMNOS"/>
+            <if expression="CANTIDADALUMNOS&gt;100">
+                <then>
+                    <assign variable="VALORPORCANTIDAD" expression="65000"/>
+                </then>
+                <else>
+                    <if expression="CANTIDADALUMNOS&lt;99">
+                        <then>
+                            <assign variable="VALORPORCANTIDAD" expression="70000"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="CANTIDADALUMNOS&lt;49">
+                        <then>
+                            <assign variable="VALORPORCANTIDAD" expression="95000"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="CANTIDADALUMNOS&lt;30">
+                        <then>
+                            <assign variable="VALORPORCANTIDAD" expression="8000000"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="VALORPORCANTIDAD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

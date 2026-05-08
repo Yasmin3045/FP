@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="De pesos a dollar"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-16 07:51:45 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMTY7MDc6MjE6MDEgcC5tLjsyNjgy"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMTY7MDc6NTE6NDUgcC5tLjsxOzI4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <home/>
+            <declare name="TotalenPesos, Tazacambio, ValorcompraenDolar" type="Integer" array="False" size=""/>
+            <input variable="Tazacambio"/>
+            <input variable="ValorcompraenDolar"/>
+            <assign variable="TotalenPesos" expression="TazaCambio*ValorcompraenDolar"/>
+            <output expression="TotalenPesos" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

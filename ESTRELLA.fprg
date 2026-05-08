@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ESTRELLA"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 08:50:53 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMDk7MDg6Mzc6NDAgcC5tLjsyNjk1"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMDk7MDg6NTA6NTMgcC5tLjsxOzI4MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <home/>
+            <turn expression="45" rotate="right"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="140" rotate="right"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="140" rotate="right"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="140" rotate="right"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="150" rotate="right"/>
+            <forward expression="105" pen="down"/>
+        </body>
+    </function>
+</flowgorithm>

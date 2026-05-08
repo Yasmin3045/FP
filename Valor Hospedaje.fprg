@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Valor Hospedaje"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-09 07:30:35 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMDk7MDY6Mzk6MDAgcC5tLjsyNjkx"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMDk7MDc6MzA6MzUgcC5tLjsxOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TipoH" type="String" array="False" size=""/>
+            <declare name="ValorT, DiasH" type="Integer" array="False" size=""/>
+            <input variable="TipoH"/>
+            <input variable="DiasH"/>
+            <if expression="TipoH=&quot;A&quot;">
+                <then>
+                    <assign variable="ValorT" expression="DiasH*70000"/>
+                </then>
+                <else>
+                    <if expression="TipoH=&quot;V&quot;">
+                        <then>
+                            <assign variable="ValorT" expression="DiasH*60000"/>
+                        </then>
+                        <else>
+                            <assign variable="ValorT" expression="DiasH*100000"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="ValorT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

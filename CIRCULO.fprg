@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIRCULO"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-16 07:17:53 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMTY7MDc6MDg6NDcgcC5tLjsyNjk3"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDQtMTY7MDc6MTc6NTMgcC5tLjsxOzI4MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <home/>
+            <declare name="R, AC" type="Integer" array="False" size=""/>
+            <input variable="R"/>
+            <assign variable="AC" expression="(PI*R*R/2)"/>
+            <output expression="AC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
