@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="promedio de edad 14 de mayo"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-14 07:26:01 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDUtMTQ7MDY6MzM6NTQgcC5tLjsyNjkx"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDUtMTQ7MDc6MjY6MDEgcC5tLjsxOzI3OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, edad, promedio, cantidad, suma" type="Integer" array="False" size=""/>
+            <input variable="cantidad"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="cantidad" direction="inc" step="1">
+                <comment text="pido la edad"/>
+                <input variable="edad"/>
+                <assign variable="suma" expression="suma+edad"/>
+            </for>
+            <assign variable="promedio" expression="suma/cantidad"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

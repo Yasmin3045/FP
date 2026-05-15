@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="promedio de edad en ciclo mientras"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-14 07:48:02 p.m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDUtMTQ7MDY6MzM6MzUgcC5tLjsyNjkw"/>
+        <attribute name="edited" value="SHA7REVTS1RPUC1KOFFMMUdMOzIwMjYtMDUtMTQ7MDc6NDg6MDIgcC5tLjsxOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, cantidad, suma, promedio, edad" type="Integer" array="False" size=""/>
+            <input variable="cantidad"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="suma" expression="0"/>
+            <do expression="i&lt;cantidad">
+                <input variable="edad"/>
+                <assign variable="suma" expression="suma+edad"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <assign variable="promedio" expression="suma/cantidad"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
