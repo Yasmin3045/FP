@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="recursividad"/>
+        <attribute name="authors" value="rinco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-25 07:49:10 p.&#8239;m."/>
+        <attribute name="created" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTI1OzA3OjQxOjM5IHAu4oCvbS47MTA3NDM="/>
+        <attribute name="edited" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTI1OzA3OjQ5OjEwIHAu4oCvbS47MTsxMDg0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="" type="Integer" array="False" size=""/>
+        </body>
+    </function>
+    <function name="SumaNNumeros" type="None" variable="Numeros">
+        <parameters>
+            <parameter name="Numero" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="suma" type="Integer" array="False" size=""/>
+            <if expression="Numero==1">
+                <then>
+                    <assign variable="Suma" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="Suma" expression="Numero+SumaNNumeros(Numero-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

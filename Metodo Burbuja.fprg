@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio vectores ordenamiento burbuja"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-07 12:45:12 p.&#8239;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI5OzEwOjI1OjMyIHAuwqBtLjszMzEw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI5OzEwOjM1OjU2IHAuwqBtLjsxOzM0MjU="/>
+        <attribute name="edited" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTA3OzEyOjQ1OjEyIHAu4oCvbS47MTsxMDg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v" type="Integer" array="True" size="7"/>
+            <declare name="p, i, temporal" type="Integer" array="False" size=""/>
+            <call expression="crearvector(V)"/>
+            <for variable="p" start="0" end="5" direction="inc" step="1">
+                <for variable="i" start="0" end="5-p" direction="inc" step="1">
+                    <if expression="v[i]&gt;v[i+1]">
+                        <then>
+                            <assign variable="temporal" expression="v[i]"/>
+                            <assign variable="v[i]" expression="v[i+1]"/>
+                            <assign variable="v[i+1]" expression="temporal"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+    <function name="crearvector" type="None" variable="">
+        <parameters>
+            <parameter name="numeros" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <input variable="numeros[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

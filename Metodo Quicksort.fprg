@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio vectores ordenamiento quicksort"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-07 12:49:15 p.&#8239;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTMwOzEwOjQ1OjM3IGEuwqBtLjszMjk0"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTMwOzEwOjU3OjA0IGEuwqBtLjsxOzMzOTk="/>
+        <attribute name="edited" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTA3OzEyOjQ5OjE1IHAu4oCvbS47MTsxMDg0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v" type="Integer" array="True" size="7"/>
+            <declare name="p, i, temporal" type="Integer" array="False" size=""/>
+            <call expression="crearvector(v)"/>
+            <for variable="p" start="0" end="5" direction="inc" step="1">
+                <for variable="i" start="p+1" end="6" direction="inc" step="1">
+                    <if expression="v[i]&lt;v[p]">
+                        <then>
+                            <assign variable="temporal" expression="v[p]"/>
+                            <assign variable="v[p]" expression="v[i]"/>
+                            <assign variable="v[i]" expression="temporal"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+    <function name="crearvector" type="None" variable="">
+        <parameters>
+            <parameter name="numeros" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <input variable="numeros[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

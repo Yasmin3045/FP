@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio vectores"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-07 12:43:10 p.&#8239;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI4OzA3OjE5OjMxIHAuwqBtLjszMzE3"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI4OzA3OjI0OjE3IHAuwqBtLjsxO0xlbm92bztERVNLVE9QLVRHTUY3TUM7MjAyNi0wNS0yODswNjo0MTo0MSBwLsKgbS47Njc5Ng=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI5OzEwOjE3OjQ5IHAuwqBtLjs0OzM0MzA="/>
+        <attribute name="edited" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTA3OzEyOjQzOjEwIHAu4oCvbS47MTsxMDgzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v" type="Integer" array="True" size="7"/>
+            <declare name="p, j, temporal" type="Integer" array="False" size=""/>
+            <call expression="crearvector(v)"/>
+            <for variable="p" start="1" end="6" direction="inc" step="1">
+                <assign variable="temporal" expression="v[p]"/>
+                <assign variable="j" expression="p"/>
+                <while expression="j&gt;0 and temporal &lt;v[j-1]">
+                    <assign variable="v[j]" expression="v[j-1]"/>
+                    <assign variable="j" expression="j-1"/>
+                </while>
+                <assign variable="v[j]" expression="temporal"/>
+            </for>
+        </body>
+    </function>
+    <function name="crearvector" type="None" variable="0">
+        <parameters>
+            <parameter name="numeros" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <input variable="numeros[i]"/>
+            </for>
+        </body>
+    </function>
+    <function name="malll" type="Integer" variable="">
+        <parameters>
+            <parameter name="numeros" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <input variable="numeros[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

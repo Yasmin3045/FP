@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio vectores ordenamiento seleccion"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-07 12:46:57 p.&#8239;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI5OzEwOjM2OjA1IHAuwqBtLjszMzEy"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI5OzEwOjQ4OjU3IHAuwqBtLjsxOzM0MzA="/>
+        <attribute name="edited" value="cmluY287Q0FSTE9UQTsyMDI2LTA2LTA3OzEyOjQ2OjU3IHAu4oCvbS47MTsxMDg1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v" type="Integer" array="True" size="7"/>
+            <declare name="p, i, menor, temporal" type="Integer" array="False" size=""/>
+            <call expression="crearvector(v)"/>
+            <for variable="p" start="0" end="5" direction="inc" step="1">
+                <assign variable="menor" expression="p"/>
+                <for variable="i" start="p+1" end="6" direction="inc" step="1">
+                    <if expression="v[i] &lt; v[menor]">
+                        <then>
+                            <assign variable="menor" expression="i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="temporal" expression="v[p]"/>
+                <assign variable="v[p]" expression="v[menor]"/>
+                <assign variable="v[menor]" expression="temporal"/>
+            </for>
+        </body>
+    </function>
+    <function name="crearvector" type="None" variable="">
+        <parameters>
+            <parameter name="numeros" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <input variable="numeros[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
